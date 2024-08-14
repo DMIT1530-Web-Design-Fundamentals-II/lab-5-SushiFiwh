@@ -1,0 +1,325 @@
+:root {
+    --white: #F2F2F2;
+    --accent: #dca530;
+    --hover: #fcc650;
+    --dark: #181413;
+    --pop: #684551;
+}
+
+body {
+    background-color: var(--white);
+    font: 1rem/1.5 "Lato", Arial, sans-serif;
+}
+
+header, footer {
+    background-color: var(--pop);
+    color: var(--white);
+}
+
+a {
+    text-decoration: none;
+}
+
+.inner-container {
+    max-width: 1024px;
+    margin: auto;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.sr-only {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+h1 {
+    font-family: 'Hurricane', cursive;
+    font-weight: 400;
+    font-size: 4rem;
+}
+
+.button {
+    color: var(--dark);
+}
+
+footer h3 {
+    color: var(--accent);
+}
+
+.newsletter h3{
+    color: var(--white);
+}
+
+header {
+    text-align: center;
+}
+
+.button{
+    color: var(--dark);
+}
+
+.title, nav a, .hero-content {
+    color: var(--white);
+}
+
+.title p {
+    font-size: 1.5rem;
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.hero-content span {
+    text-align: center;
+}
+
+.hero-content a {
+    color: var(--dark);
+    text-transform: lowercase;
+}
+
+.parallax-content h2 {
+    font-weight: 600;
+}
+
+.fav h2 {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    font-weight: 100;
+    text-align: center;
+    font-size: 4rem;
+}
+
+
+.card h2, .category{
+    text-align: center;
+}
+
+.card h2 {
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.card a{
+    color: black;
+}
+
+.category {
+    text-transform: uppercase;
+    font-size: .9rem;
+}
+
+footer a {
+    color: var(--white);
+}
+
+form a {
+    color: var(--dark);
+}
+
+.disclaimer {
+    font-size: .7rem;
+    text-align: center;
+    line-height: 2;
+}
+
+header svg {
+    width: 30px;
+}
+
+.button {
+    border: none;
+    border-radius: 0.2rem;
+    background-color: var(--accent);
+    padding: .4rem .75rem;
+    color: black;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+}
+
+.navbar div {
+    display: flex;
+    align-items: center;
+}
+
+.navbar nav li {
+    display: inline;
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: url('../img/hero.webp');
+    align-items: center;
+    justify-content: center;
+    margin-top: -1rem;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 28vw;
+}
+
+.hero-content span {
+    display: inline-block;
+    width: 100%;
+}
+
+.hero-content a {
+    border: none;
+    border-radius: .2rem;
+    background-color: var(--accent);
+    padding: .5rem;
+    text-align: center;
+}
+
+.parallax{
+    background: url('../img/splash.webp') center / cover no-repeat fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parallax-content{
+    margin-left: 20vw;
+}
+
+.parallax-content h2 {
+    width: 20vw;
+}
+
+.parallax-content p {
+    width: 25.70vw;
+    padding-top: 1rem;
+}
+
+.scroll-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    scrollbar-color: var(--accent);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.2rem;
+    flex: 0 0 23rem;
+    margin: 2rem 1rem;
+}
+
+.card div{
+    margin-bottom: 2.25rem;
+}
+
+.card button {
+    border: none;
+    border-radius: 0.2rem;
+    background-color: var(--accent);
+    margin-top: auto;
+    padding: .3rem;
+}
+
+.card button:hover{
+    background-color: var(--hover);
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+footer h3 {
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+
+footer nav {
+    display: flex;
+    justify-content: space-between;
+    line-height: 2;
+}
+
+.newsletter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+}
+
+.newsletter div {
+    width: 25vw;
+}
+
+form input {
+    width: 80%;
+}
+
+form a{
+    border: none;
+    background-color: var(--accent);
+    margin-top: auto;
+    padding: .3rem;
+}
+
+/* mobile view media query */
+@media screen and (max-width: 960px) {
+    .parallax {
+        background: url('../img/splash-mobile.webp') center / cover no-repeat;
+        height: 115vh;
+    }
+
+    .parallax-content {
+        margin-left: 0;
+        padding: 2rem; /* Adjust the padding to fit within the yellow accent area */
+        text-align: center; /* Center the text to make it more responsive */
+    }
+
+    .parallax-content h2 {
+        width: 100%; /* Make sure the width is responsive */
+    }
+
+    .parallax-content p {
+        width: 100%; /* Ensure the paragraph width is also responsive */
+        padding-top: 1rem;
+    }
+
+    footer, .newsletter, footer nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    form input {
+        width: 50%;
+    }
+}
